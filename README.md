@@ -27,11 +27,11 @@ The SQL scripts in `sql/` validate order-detail row counts, units sold, revenue 
 - `sql/data_validation.sql`: data quality and KPI validation queries.
 - `sql/business_analysis.sql`: sales and shipping analysis queries.
 - `screenshots/`: add screenshots of your finished Power BI report here.
-- `Northwind_Sales_Analysis.pbix`: add your saved Power BI report to this folder.
+- `northwind_eccomerce.pbix`: add your saved Power BI report to this folder.
 
 ## How to Use
 1. Open MySQL Workbench and run the SQL scripts against your `northwind_ecommerce` database.
-2. Open `Northwind_Sales_Analysis.pbix` in Power BI Desktop.
+2. Open `northwind_eccomerce.pbix` in Power BI Desktop.
 3. Review the screenshots and dashboard visuals.
 4. Update the Key Findings section below with findings from your own validated results.
 
