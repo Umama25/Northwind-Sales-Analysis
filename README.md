@@ -14,7 +14,7 @@ This project analyzes sales performance, product and category revenue, customer 
 
 ## Dashboard Preview
 
-![Sales Analysis Dashboard](screenshots/sales_analysis.png)
+![Sales Analysis Dashboard](DashBoard.png)
 
 ## Dashboard Features
 
