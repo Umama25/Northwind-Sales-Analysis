@@ -1,45 +1,85 @@
 # Northwind Sales & Shipping Analysis
 
 ## Project Overview
-This project analyzes sales performance, product and category revenue, customer activity, and shipping delays using the Northwind sample database. MySQL is used for SQL analysis and validation, and Power BI is used to create an interactive dashboard.
 
-## Tools
-- MySQL / MySQL Workbench
+This project analyzes sales performance, product and category revenue, customer activity, and shipping delays using the Northwind sample database. MySQL is used for SQL analysis and data validation, while Power BI is used to build an interactive dashboard.
+
+## Tools & Technologies
+
+- MySQL and MySQL Workbench
+- SQL
 - Power BI Desktop
-- SQL and DAX
+- DAX
 - GitHub
 
+## Dashboard Preview
+
+![Sales Analysis Dashboard](screenshots/sales_analysis.png)
+
 ## Dashboard Features
+
 - Total revenue after discounts
-- Total orders
-- Customers with orders
+- Total orders and customers with orders
 - Total units sold
-- Revenue by year and category
-- Top 10 products and customers by revenue
-- Monthly revenue trend
-- Late orders and late-shipping percentage
-- Year and category slicers
-
-## Data Validation
-The SQL scripts in `sql/` validate order-detail row counts, units sold, revenue before and after discounts, total discounts, order/customer counts, and shipping delays. Compare these results with the Power BI measures before publishing.
-
-## Files
-- `sql/data_validation.sql`: data quality and KPI validation queries.
-- `sql/business_analysis.sql`: sales and shipping analysis queries.
-- `screenshots/`: add screenshots of your finished Power BI report here.
-- `northwind_eccomerce.pbix`: add your saved Power BI report to this folder.
-
-## How to Use
-1. Open MySQL Workbench and run the SQL scripts against your `northwind_ecommerce` database.
-2. Open `northwind_eccomerce.pbix` in Power BI Desktop.
-3. Review the screenshots and dashboard visuals.
-4. Update the Key Findings section below with findings from your own validated results.
+- Revenue by year and product category
+- Top 10 products by revenue
+- Top 10 customers by revenue
+- Monthly revenue trends
+- Shipping performance KPIs
+- Interactive year and category slicers
 
 ## Key Findings
-Add 2–4 findings from your actual results, for example:
-- Which product category generated the most revenue.
-- Which products or customers contributed the most revenue.
-- How revenue changed over time.
+
+Based on the validated SQL results:
+
+- **Revenue after discounts:** 1,265,793.04
+- **Revenue before discounts:** 1,354,458.59
+- **Total discounts:** 88,665.55
+- **Units sold:** 51,317
+- **Order-detail rows analyzed:** 2,155
+- **Late-shipping rate:** 17.55% of shipped orders took more than 10 days from order date to ship date.
+
+Revenue is calculated as unit price multiplied by quantity, adjusted for line-item discounts. The shipping metric measures the time between order date and ship date; it does not establish whether an order missed its required delivery date.
+
+## SQL Analysis
+
+The SQL scripts cover:
+
+- Data validation and row counts
+- Revenue before and after discounts
+- Total discounts and units sold
+- Order and customer counts
+- Revenue by year and category
+- Top products and customers by revenue
+- Monthly revenue trends
+- Shipping-delay calculations
+
+## Project Files
+
+- `northwind_eccomerce.pbix` — interactive Power BI report
+- `sql/data_validation.sql` — validation queries
+- `sql/business_analysis.sql` — sales analysis queries
+- `screenshots/sales_analysis.png` — dashboard screenshot
+
+## How to Use
+
+1. Open MySQL Workbench and run the SQL scripts against your `northwind_ecommerce` database.
+2. Open `northwind_eccomerce.pbix` in Power BI Desktop.
+3. Explore the dashboard using the year and category slicers.
+4. Review the SQL queries to understand how the KPIs were calculated.
+
+## Limitations
+
+- Northwind is a fictional sample business used for educational analysis.
+- The shipping-delay metric uses order date and ship date, not actual customer delivery timestamps.
+- Revenue calculations do not include freight, taxes, returns, or cost of goods sold.
+
+## Author
+
+Umama Bashir
+
+Aspiring Data Analyst | SQL | Power BI | Data Analysis
+
 - What proportion of shipped orders took more than 10 days from order date to ship date.
 
 ## Notes
