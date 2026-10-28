@@ -80,9 +80,3 @@ Umama Bashir
 
 Aspiring Data Analyst | SQL | Power BI | Data Analysis
 
-- What proportion of shipped orders took more than 10 days from order date to ship date.
-
-## Notes
-- This project uses sample Northwind data for educational and portfolio purposes.
-- Do not upload database passwords, credentials, or other private information.
-- Verify all figures against your local database before publishing.
